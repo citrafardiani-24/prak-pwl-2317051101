@@ -13,14 +13,14 @@ class KelasSeeder extends Seeder
      */
     public function run(): void
     {
-        $data =[
+        $data = [
             'A',
             'B',
             'C',
             'D',
         ];
 
-        foreach($data as $kelas){
+        foreach ($data as $kelas) {
             Kelas::create([
                 'nama_kelas' => $kelas,
             ]);
