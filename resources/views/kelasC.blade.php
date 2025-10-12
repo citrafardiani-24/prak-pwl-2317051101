@@ -64,6 +64,7 @@
             letter-spacing: 1px;
         }
 
+        /* Animasi */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -72,10 +73,12 @@
 </head>
 <body>
     <div class="profile-card">
+        <!-- Avatar -->
         <div class="avatar">
             <img src="{{ asset($foto ?? 'default.png') }}" alt="Foto Profil">
         </div>
 
+        <!-- Info -->
         <div class="info-box">
             <span class="label">Nama</span>
             {{ $nama }}
